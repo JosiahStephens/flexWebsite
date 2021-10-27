@@ -43,17 +43,23 @@
       </ul>
     </nav>
   </header>
-  <picture>
-    <source srcset="images/hero-1600.jpg" media="(min-width: 901px)">
-    <source srcset="images/hero-900.jpg" media="(min-width: 601px)">
-    <source srcset="images/hero-600.jpg" media="(max-width: 600px)">
 
-    <img src="images/hero-900.jpg" alt="dhark fins">
-  </picture>
+  <div class="hero">
+    <picture>
+      <source srcset="images/hero-1600.jpg" media="(min-width: 901px)">
+      <source srcset="images/hero-900.jpg" media="(min-width: 601px)">
+      <source srcset="images/hero-600.jpg" media="(max-width: 600px)">
+  
+      <img src="images/hero-900.jpg" alt="dhark fins">
+    </picture>
+    <div class="overlay">
+      <h1>Dharks</h1>
+    </div>
+  </div>
+
   <main>
-    <h1>Dharks</h1>
     <div class="scroll-down">About Us</div>
-    <article class="first-article">
+    <article class="first-article" class="panel">
       <h2>What are dharks?</h2>
       <p>
         Dog Sharks (<em>selachimorpha canis</em>), often called dharks, are a group of
@@ -67,7 +73,7 @@
       <a href="about/" class="button">What We Do</a>
       <img class="inline-picture" src="images/dhark600.jpg" alt="depiction of a dhark">
     </article>
-    <article>
+    <article class="panel">
       <h2>Evolutionary history</h2>
       <h3>Origin</h3>
       <p>
@@ -136,7 +142,7 @@
       </ol>
       <a href="form/" class="button">Sign Up For Spam</a>
     </article>
-    <section>
+    <article>
       <h2>Our Projects</h2>
       <div class="cards">
         <div class="card">
@@ -180,7 +186,7 @@
           </a>
         </div>
       </div>
-    </section>
+    </article>
   </main>
 
   <aside>
