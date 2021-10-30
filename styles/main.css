@@ -53,14 +53,16 @@ body {
 }
 
 aside {
+    display: flex;
+    justify-content: center;
     background-color: var(--koromiko);
     color: var(--dark-scorpion);
-    margin-top: 4rem;
     padding: 0rem 1rem;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 footer {
-    /* margin: 0 auto; */
     text-align: center;
     margin: 5rem;
     margin-bottom: 0;
@@ -170,9 +172,10 @@ a:focus {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 70rem;
-    /* background-color: var(--wild-sand); */
     align-self: center;
     /* margin: 0 2rem; */
 }
@@ -181,11 +184,17 @@ article {
     width: 100%;
     background-color: var(--wild-sand);
     padding: 0 1rem;
+    padding-top: 2rem;
+    max-width: 70rem;
     /* padding-top: 5rem; */
 }
 
-article {
+article:first-child {
     padding-top: 5rem;
+}
+
+aside article:first-child {
+    padding-top: 2rem;
 }
 
 img {
@@ -209,9 +218,14 @@ article h2 {
 } */
 
 .panel .image-wrap {
-    order: -1;
+    /* order: -1; */
     /* width: 100%; */
     flex: 1 1 40%;
+}
+
+.panel .second {
+    padding-top: 2rem;
+    /* order: 0; */
 }
 
 .text-wrap {
@@ -352,7 +366,7 @@ header .dead-link:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
 .card {
     position: relative;
@@ -397,14 +411,30 @@ header .dead-link:hover {
     box-shadow: 0 0 0 2px var(--dark-scorpion);
 }
 
+aside article {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--koromiko);
+}
+
+.left {
+    order: -2;
+}
+
 @media (min-width: 700px) {
     .panel {
         flex-direction: row;
         gap: 2rem;
     }
+
     .panel h2 {
         margin: 0;
         padding-top: 0rem;
+    }
+
+    .panel .second {
+        padding-top: 0rem;
+        /* order: -1; */
     }
 
     .contact {
@@ -412,13 +442,15 @@ header .dead-link:hover {
         padding: 1rem;
         background-color: var(--koromiko);
     }
+
     .about {
         padding: 1rem;
     }
+
     /* .panel .left {
         order: -2; ???
     } */
-    
+
     /* cards */
     .cards {
         flex-direction: row;
