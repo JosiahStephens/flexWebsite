@@ -17,17 +17,17 @@
 header {
     background-color: var(--dark-au-chico);
     color: var(--wild-sand);
-    padding: 1rem 2rem;
     position: fixed;
     top: 0;
     left: 0;
+    padding-right: 2rem;
     width: 100%;
     z-index: 1;
 }
 
 header {
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 header nav ul {
@@ -93,6 +93,7 @@ picture img {
 .hero {
     position: relative;
     background-color: var(--wild-sand);
+    margin-top: 56;
 }
 
 .hero h1 {
@@ -120,7 +121,6 @@ h1,
 h2,
 h3 {
     line-height: 1.2;
-    /* margin: 1em 0 0.5em; */
 }
 
 h1 {
@@ -180,6 +180,10 @@ article {
     width: 100%;
     background-color: var(--wild-sand);
     padding: 0 1rem;
+    /* padding-top: 5rem; */
+}
+
+article:first-child {
     padding-top: 5rem;
 }
 
@@ -190,7 +194,7 @@ article img {
 
 article h2 {
     margin: 0;
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
 }
 
 .panel {
@@ -321,11 +325,15 @@ header .dead-link:hover {
 }
 
 /* cards */
+.card-wrap {
+    padding: 1rem;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .cards img {
@@ -336,12 +344,8 @@ header .dead-link:hover {
   }
 
 .card {
-    /* float: left; */
-    /* margin: 3rem .5rem; */
     position: relative;
     display: block;
-    /* max-width: 350px;
-    max-height: 350px; */
 }
 
 .image-wrapper img {
