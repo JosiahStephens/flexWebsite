@@ -7,7 +7,7 @@
     --scorpion: #575757;
     --dark-scorpion: #464646;
     --overlay: rgba(0, 0, 0, .4);
-    background-color: var(--dark-au-chico);
+    background-color: var(--wild-sand);
 }
 
 * {
@@ -64,11 +64,6 @@ footer {
     text-align: center;
     margin: 5rem;
     margin-bottom: 0;
-}
-
-h1 {
-    padding-left: 1rem;
-    padding-top: 4rem;
 }
 
 h1,
@@ -214,13 +209,18 @@ article h2 {
 } */
 
 .panel .image-wrap {
-    order: -1;
+    
     /* width: 100%; */
     flex: 1 1 40%;
 }
 
+.panel .image-wrap:first-child {
+    order: -1;
+}
+
 .text-wrap {
     padding-right: 2rem;
+    flex: 1 1 60%;
 }
 
 section {
